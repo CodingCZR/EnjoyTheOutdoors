@@ -66,27 +66,45 @@
     </nav>
 
     <!-- background video -->
-    <div class="background-image">
-        <video src="media/pexels-rodnae-productions-8552282 (1080p).mp4" style="height: 10%; width: 100%;" autoplay muted loop></video>
+    <div class="background-image w-100">
+        <video src="media/pexels-rodnae-productions-8552282 (1080p).mp4" class="w-100 h-75" autoplay muted loop></video>
     </div>
 
+    <div class="text-sm-center">
+        <h1 class="display-4">Discover the Beauty of Nature</h1>
+        <p class="lead">Explore the natural wonders of the United States</p>
+        <hr style="margin-bottom: 0;">
+    </div>
+    
     <!-- National Park SEO -->
-    <div class="row container-fluid mt-1">
+    <div class="row position-relative">
         <div class="col-md-6 d-flex justify-content-center align-items-center">
             <button class="btn btn-primary">Learn more about National Parks</button>
         </div>
-        <br />
-        <p class="col-md-6" style="font-size: large;">
-          Serenity Springs Lodge goes beyond luxurious accommodations, offering a
-          diverse range of adventurous activities, from guided hikes and water
-          sports to relaxing by the infinity pool. The resort harmoniously
-          combines luxury, nature, and adventure, ensuring an unforgettable
-          retreat and leaving guests with enduring memories of unparalleled
-          serenity, fostering a longing to return.
-        </p>
-        <br />
+
+        <div class="col-md-6 d-flex justify-content-center align-items-center position-relative" style="height: 400px;">
+            <div class="dark-overlay position-absolute" style="top: 0; left: 0; bottom: 0; right: 0; width: 100%;"></div>
+            <img src="coolPark.jpg" alt="Image description" style="height: 100%; width: 100%; position: relative; z-index: -1;">
+            <div class="text text-center">
+                <p>Discover the beauty of our national parks. From mountains to canyons, these landscapes offer unparalleled experiences. Join us in preserving these wonders. Explore more on our website.</p>
+            </div>
+        </div>
     </div>
 
+    <!-- Mountain SEO -->
+    <div class="row position-relative">
+        <div class="col-md-6 d-flex justify-content-center align-items-center position-relative" style="height: 400px;">
+          <div class="dark-overlay position-absolute" style="top: 0; left: 0; bottom: 0; right: 0; width: 100%;"></div>
+          <img src="coolMountain.jpg" alt="Image description" style="height: 100%; width: 100%; position: relative; z-index: -1;">
+          <div class="text text-center">
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <button class="btn btn-primary">Learn more about National Parks</button>
+        </div>
+    </div>
 
   </body>
 </html>
