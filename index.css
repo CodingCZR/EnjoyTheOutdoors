@@ -1,3 +1,15 @@
-nav {
-    opacity: 0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.custom-navbar {
+    height: 80px; /* Set the desired height (adjust as needed) */
+    padding: 10px;
+    opacity: 0.7;
+}
+
+.background-image {
+    opacity: 0.9; /* You can adjust the opacity to control the image's visibility */
 }
