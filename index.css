@@ -2,6 +2,7 @@
 
 * {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -11,10 +12,15 @@ body {
   }
 
 .custom-navbar {
-    height: 80px; /* Set the desired height (adjust as needed) */
-    padding: 10px;
+    height: 110px; 
+    /* padding: 10px;  */
     opacity: 0.7;
 }
+
+.solid-background-navbar {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
 
 .background-image {
     opacity: 0.9; /* You can adjust the opacity to control the image's visibility */
