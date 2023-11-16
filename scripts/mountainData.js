@@ -1,3 +1,7 @@
+window.addEventListener('DOMContentLoaded', () => {
+    mountainDropdown();
+});
+
 const mountainsArray = [
     {
         name: "Mt. Washington",
@@ -528,3 +532,14 @@ const mountainsArray = [
         }
     }
 ]
+
+function mountainDropdown() {
+    const mountainSelect = document.getElementById("mountain-select");
+    // Loop through the mountainsArray and create an option element for each mountain
+    mountainsArray.forEach(mountain => {
+      const option = document.createElement("option");
+      option.value = mountain.name;
+      option.textContent = mountain.name;
+      mountainSelect.appendChild(option);
+}); 
+}

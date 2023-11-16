@@ -15,6 +15,7 @@ body {
 }
 
 .solid-background-navbar {
+    height: 110px; 
     opacity: 1;
     transition: 0.5s ease-in-out;
   }
