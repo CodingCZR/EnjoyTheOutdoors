@@ -67,7 +67,11 @@ function displayMountain(mountain, mountainContainer){
     mountainDesc.classList.add("text", "mt-5", "text-center", "large-text");
     mountainDesc.textContent = `${mountain.desc}`;
     mountainCardBody.appendChild(mountainDesc);
-
+    
+    const mountainCoords = document.createElement("p");
+    mountainCoords.classList.add("text", "text-center");
+    mountainCoords.textContent = `Coordinates: ${mountain.coords.lat}, ${mountain.coords.lng}`;
+    mountainCardBody.appendChild(mountainCoords);
 
 }
 
