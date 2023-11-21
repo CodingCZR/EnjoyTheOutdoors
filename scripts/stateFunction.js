@@ -106,5 +106,12 @@ function displayPark(parkFilter, parksContain) {
     parkAddress.classList.add('card-text', 'mt-3');
     parkAddress.innerText = parkFilter.Address;
     parkCardBody.appendChild(parkAddress);
+
+    // setting park coordinates
+    const parkCords = document.createElement('p');
+    parkCords.classList.add('card-text');
+    parkCords.innerText = parkFilter.Latitude + ', ' + parkFilter.Longitude;
+    parkCardBody.appendChild(parkCords);
+    
     
 }
