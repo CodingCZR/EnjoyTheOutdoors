@@ -101,14 +101,10 @@ function displayPark(parkFilter, parksContain) {
         parkCardBody.appendChild(parkLink); 
     }
 
-    // setting the park button
-    const parkButton = document.createElement('button');
-    parkButton.classList.add('btn', 'btn-primary', 'text-center', 'm-4'); 
-    parkButton.innerText = 'Add to Favorites'; 
-
-    parkButton.addEventListener('click', () => {
-        addFavorite(parkFilter.LocationID);
-    });
-
-    parkCardBody.appendChild(parkButton); 
+    // setting park address
+    const parkAddress = document.createElement('p');
+    parkAddress.classList.add('card-text', 'mt-3');
+    parkAddress.innerText = parkFilter.Address;
+    parkCardBody.appendChild(parkAddress);
+    
 }
