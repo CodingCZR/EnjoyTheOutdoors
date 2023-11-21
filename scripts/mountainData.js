@@ -1,5 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
     mountainDropdown();
+    displayMountains();
+
+    document.getElementById('dropdown').addEventListener('change', updateMountainInfo);
 });
 
 const mountainsArray = [
@@ -542,4 +545,26 @@ function mountainDropdown() {
       option.textContent = mountain.name;
       mountainSelect.appendChild(option);
 }); 
+}
+
+function displayMountains() {
+        const mountainContainer = document.getElementById("mountain-container");
+        mountainContainer.innerHTML = "";
+        
+        mountainsArray.forEach(mountain => {
+            displayMountain(mountain, mountainContainer);
+        });
+}
+
+function displayMountain(){
+
+
+}
+//setting mountain Image
+function displayMountainImage(mountainName) {
+    const mountainImg = document.getElementById("mountain-img");
+
+    mountainImg.src = mountainsArray.img;
+
+    mountainImg.appendChild(mountainImg);
 }
