@@ -1,9 +1,75 @@
 window.addEventListener('DOMContentLoaded', () => {
     mountainDropdown();
-    displayMountains();
+    selectedMountainDropdown();
+    displayMountains(); // Call displayMountains without any argument
 
-    document.getElementById('dropdown').addEventListener('change', updateMountainInfo);
+    let mountainSelect = document.getElementById('mountain-select');
+    mountainSelect.addEventListener('change', displayMountains);
 });
+
+function mountainDropdown() {
+    const mountainSelect = document.getElementById("mountain-select");
+    // Loop through the mountainsArray and create an option element for each mountain
+    mountainsArray.forEach(mountain => {
+        const option = new Option(mountain.name)
+        mountainSelect.add(option);
+    });
+}
+
+function selectedMountainDropdown() {
+    const mountainSelect = document.getElementById("mountain-select").value;
+    console.log(mountainSelect);
+
+    return mountainSelect; // return the mountain selected
+}
+
+function displayMountains() {
+    const mountainContainer = document.getElementById("mountain-container");
+    console.log(mountainContainer); // Check if the element is found
+    mountainContainer.classList.add("text-center");
+
+    mountainContainer.innerText = '';
+
+    const selectedMountain = selectedMountainDropdown(); // Call the selectedMountainDropdown function to get the selected mountain
+    const mountain = mountainsArray.find(m => m.name === selectedMountain); // Find the mountain object based on the selected mountain name
+
+    if (mountain) {
+        displayMountain(mountain, mountainContainer); // Call the displayMountain function with the selected mountain and mountainContainer
+    }
+}
+
+function displayMountain(mountain, mountainContainer){
+    
+    const mountainCard = document.createElement("div");
+    mountainCard.classList.add("small-card");
+    mountainCard.id = mountain.name;
+    mountainContainer.appendChild(mountainCard);
+
+    const mountainCardBody = document.createElement("div");
+    mountainCard.appendChild(mountainCardBody);
+
+    const mountainName = document.createElement("h5");
+    mountainName.classList.add("text", "text-center");
+    mountainName.textContent = mountain.name;
+    mountainCardBody.appendChild(mountainName);
+
+    const mountainImg = document.createElement("img");
+    mountainImg.classList.add("card-img-overlay", "overlay-img");
+    mountainImg.src = `images/${mountain.img}`;
+    mountainCardBody.appendChild(mountainImg);
+
+    const mountainElevation = document.createElement("p");
+    mountainElevation.classList.add("align-bottom", "text-center", "text-white");
+    mountainElevation.textContent = `Elevation: ${mountain.elevation}`;
+    mountainCardBody.appendChild(mountainElevation);
+
+    const mountainDesc = document.createElement("p");
+    mountainDesc.classList.add("text", "mt-5", "text-center", "large-text");
+    mountainDesc.textContent = `${mountain.desc}`;
+    mountainCardBody.appendChild(mountainDesc);
+
+
+}
 
 const mountainsArray = [
     {
@@ -535,36 +601,3 @@ const mountainsArray = [
         }
     }
 ]
-
-function mountainDropdown() {
-    const mountainSelect = document.getElementById("mountain-select");
-    // Loop through the mountainsArray and create an option element for each mountain
-    mountainsArray.forEach(mountain => {
-      const option = document.createElement("option");
-      option.value = mountain.name;
-      option.textContent = mountain.name;
-      mountainSelect.appendChild(option);
-}); 
-}
-
-function displayMountains() {
-        const mountainContainer = document.getElementById("mountain-container");
-        mountainContainer.innerHTML = "";
-        
-        mountainsArray.forEach(mountain => {
-            displayMountain(mountain, mountainContainer);
-        });
-}
-
-function displayMountain(){
-
-
-}
-//setting mountain Image
-function displayMountainImage(mountainName) {
-    const mountainImg = document.getElementById("mountain-img");
-
-    mountainImg.src = mountainsArray.img;
-
-    mountainImg.appendChild(mountainImg);
-}

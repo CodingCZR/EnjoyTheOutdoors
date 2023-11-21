@@ -34,3 +34,13 @@ body {
     color: #fff;
     z-index: 1;
   }
+
+.overlay-img {
+    position: relative;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    overflow: hidden;
+  }
