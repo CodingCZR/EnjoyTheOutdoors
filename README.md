@@ -20,6 +20,7 @@ While approaching this project, I wanted something really simple. I decided that
 
 *A transparent Navbar*
 
+###Sketches:
 [Rough Look at Home Page](https://drive.google.com/file/d/1MQpihY4BcegiU0Qx7jNvD8cyu02uixR7/view?usp=sharing)
 
  *I know, I know, it's a mess to look at but I was at work and had a sudden inspiration. So I had to do what I had to do.*
