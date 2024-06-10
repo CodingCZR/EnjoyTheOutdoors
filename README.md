@@ -1,65 +1,44 @@
 # EnjoyTheOutdoors
-Capstone Project for PluralSight
+### Capstone Project for PluralSight
 
+Welcome! My name is Cesar Miranda, and in this README file, I'll guide you through my thought process and approach to this project. Let's dive in!
 
-Hello, my name is Cesar Miranda and I will be going over this project through this funny little thing we call a ReadMe file. **Hi Mom**. Just will talk about my thought process and opinions on how I approached this project. 
+For a detailed overview of the page requirements, please refer to the following document: [intro.pdf](https://drive.google.com/file/d/1Phdfn8J5Uq2jf22jyDodwlGx4PxxCkOI/view?usp=sharing)
 
+## Project Steps
+1. Visualize the design
+2. Write the code
+3. Troubleshoot issues
+4. Iterate and refine
 
-**Read about the page requirements here: [intro.pdf](https://drive.google.com/file/d/1Phdfn8J5Uq2jf22jyDodwlGx4PxxCkOI/view?usp=sharing)**
+### Step 1: Visualizing the Design
 
-## Steps to Success 
-* 1: Visualize my look
-* 2: Work on some code
-* 3: Get stuck on a code 
-* ~~4: Go to Step 2 because you're behind due to step 3~~
+Visualization is dynamic and subject to change based on factors such as time constraints and new insights. Initially, I aimed for a simple yet functional design, leveraging previous work to streamline the process.
 
-### Step 1: Visualizing the Look
-> Visualization is subject to change based on factors such as: Time and more Visualization.
+**Sketches:**
+- [Home Page Rough Draft](https://drive.google.com/file/d/1MQpihY4BcegiU0Qx7jNvD8cyu02uixR7/view?usp=sharing)
+  - *Note: This is a preliminary sketch created during a moment of inspiration at work.*
+  - **Description:** The design includes a transparent navbar and an image within the same block, allowing a seamless flow between pages.
 
-While approaching this project, I wanted something really simple. I decided that the best course for me was to bring in something I have already done.
+- [Mountain Page Sketch](https://drive.google.com/file/d/18afzZl86O_u9fJfGZfj4lsDaNV9G7ym7/view?usp=drive_link)
+  - **Description:** This page mirrors the homepage's layout with a focus on card presentation when prompted.
 
-*A transparent Navbar*
+### Step 2: Writing the Code
 
-###Sketches:
-[Rough Look at Home Page](https://drive.google.com/file/d/1MQpihY4BcegiU0Qx7jNvD8cyu02uixR7/view?usp=sharing)
+With the sketches in hand, I started coding the home and mountain pages. Using Bootstrap, I added a transition to the navbar, changing its opacity to a solid color—a task that challenged my limited JavaScript skills. Special thanks to online tutorials for their guidance.
 
- *I know, I know, it's a mess to look at but I was at work and had a sudden inspiration. So I had to do what I had to do.*
+### Step 3: Troubleshooting Code
 
-Breaking it down: It's a Navbar and Image in the same block. Which is where my transparent Bar comes into play. Allows it to flow into my other page. 
+JavaScript posed significant challenges, especially with creating dynamic cards upon filtering. Persistent effort and support from peers helped overcome these hurdles. Shoutout to the helpful internet community!
 
-The bottom is just navigating to the pages. 
+### Step 4: Refining and Iterating
 
+Time management was critical, and although I faced delays due to JavaScript issues, the experience reinforced the importance of effective time allocation.
 
->Mountain Page Sketch
-[Mountain Search Layout](https://drive.google.com/file/d/18afzZl86O_u9fJfGZfj4lsDaNV9G7ym7/view?usp=drive_link)
+> *Time, a relentless foe in our projects, imposes deadlines and urgency. Effective time management is crucial to ensure project success.* - ChatGPT
 
-This was easy. Just took some notes from how my homepage is displayed and applied to this one. I was more focused on the card presenting when prompted.
+## Final Thoughts
 
-### Step 2: Working on some code.
-Luckily for me, I already sketched out my home page and mountain page so building these were a bit simple. Connected with my friend known as Bootstrap and went to work. 
+This project, though challenging, was incredibly rewarding. I look forward to tackling our final capstone project with the lessons learned from this experience.
 
-I did add a transition to my navbar from the opacity to a solid color. Which was a bit of a challenge since I have a grasp of JS the size of a Cutie orange. *Thank you random person who decided to make a video on it.*
-
-### Step 3: Get Stuck on Code
-
-The Javascript, my biggest enemy...to say I struggled was an understatement. I don't know what it is but using Javascript to create cards when things were filtered was driving me crazy.
-
->Crazy? I was crazy once. I was in a rubber room. A rubber room with rubber rats. I hate rubber rats, they make me crazy. Crazy?...
-
-I toughed it out and thanks to my peers got that solved. *Also a huge shoutout to the random internet users who sacrifice their pride and ask the internet for help.*
-
-### ~~4: Go to Step 2 because you're behind due to step 3~~
-
->Time, a relentless foe in our projects, imposes deadlines and urgency. Failing to manage it effectively jeopardizes goals, making time a tangible threat to our aspirations and deadlines. It prompts a crucial need for adept time management to ensure project success. - ChatGPT
-
-Time is like an ex-girlfriend. You have it and when you don't realize it, it's gone and attending University of Santa Cruz.
-
-*So they say*
-
-I could have managed my time better. I had some ideas but I genuinely just got lost in the Javascript. I felt pretty good about everything though and I hope that I make it a point of emphasis to give myself more time. 
-
-## Final Opinions
-
-This project was a fun headache to have and I can't wait to see what our last capstone has in hold for us. 
-
-![GIF](https://i.gifer.com/5Jxu.gif)
+![Project Completion](https://i.gifer.com/5Jxu.gif)
