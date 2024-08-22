@@ -34,11 +34,12 @@ function displayMountains() {
     const mountain = mountainsArray.find(m => m.name === selectedMountain); // Find the mountain object based on the selected mountain name
 
     if (mountain) {
-        displayMountain(mountain, mountainContainer); // Call the displayMountain function with the selected mountain and mountainContainer
+        createMountainCards(mountain, mountainContainer); // Call the createMountainCards function with the selected mountain and mountainContainer
     }
 }
 
-function displayMountain(mountain, mountainContainer){
+// creates display cards
+function createMountainCards(mountain, mountainContainer){
     
     const mountainCard = document.createElement("div");
     mountainCard.classList.add("small-card");
